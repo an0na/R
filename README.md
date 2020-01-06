@@ -6,7 +6,8 @@
 
 ## 规则来源
 
-  **来自lhie1大佬**
+
+  @lhie1 **[来自lhie1大佬](https://github.com/lhie1/Rules)**
 
   ### Head(头部)
   https://github.com/lhie1/Rules/blob/master/QuantumultX/Head.conf
