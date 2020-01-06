@@ -2,7 +2,7 @@
 
 ## 适用软件
 
-  **ios : QuantumultX**
+  **ios: [QuantumultX](https://github.com/crossutility/Quantumult-X)**
 
 ## 规则来源
 
