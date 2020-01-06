@@ -2,12 +2,13 @@
 
 ## 适用软件
 
-  **IOS:QuantumultX**
+  **ios : QuantumultX**
 
 ## 规则来源
 
+   **[@lhie1](https://github.com/lhie1/Rules)**
 
-  @lhie1 **[来自lhie1大佬](https://github.com/lhie1/Rules)**
+## 规则组成
 
   ### Head(头部)
   https://github.com/lhie1/Rules/blob/master/QuantumultX/Head.conf
@@ -17,7 +18,3 @@
 
   ### MitM(Man-in-the-middle attack)
   https://github.com/lhie1/Rules/blob/master/QuantumultX/MitM.conf
-
-## 目标
-
-从各个地方取规则，方便自己使用.
