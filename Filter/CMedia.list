@@ -1,0 +1,73 @@
+# > AcFun
+USER-AGENT,AcFun*,CMedia
+HOST-SUFFIX,acfun.cn,CMedia
+HOST-SUFFIX,acfun.com,CMedia
+HOST-SUFFIX,acfun.tv,CMedia
+HOST-SUFFIX,aixifan.com,CMedia
+
+# > Bilibili
+USER-AGENT,*bili*,CMedia
+HOST-KEYWORD,bilibili,CMedia
+HOST-SUFFIX,acgvideo.com,CMedia
+HOST-SUFFIX,hdslb.com,CMedia
+
+# > iQiyi
+USER-AGENT,QIYI*,CMedia
+USER-AGENT,iQiYi*,CMedia
+USER-AGENT,PPStream*,CMedia
+USER-AGENT,QYPlayer*,CMedia
+HOST-SUFFIX,iqiyi.com,CMedia
+HOST-SUFFIX,iqiyipic.com,CMedia
+HOST-SUFFIX,qy.net,CMedia
+HOST-SUFFIX,71.am,CMedia
+
+# > Kugou & Kuwo
+HOST-SUFFIX,kugou.com,CMedia
+USER-AGENT,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*,CMedia
+HOST-SUFFIX,kuwo.cn,CMedia
+HOST-SUFFIX,koowo.com,CMedia
+
+# > Letv
+HOST-SUFFIX,api.mob.app.letv.com,CMedia
+HOST-SUFFIX,letv.com,CMedia
+
+# > MGTV
+USER-AGENT,MGTV*,CMedia
+HOST-SUFFIX,hunantv.com,CMedia
+HOST-SUFFIX,mgtv.com,CMedia
+
+# > Migu
+USER-AGENT,MiguVideo*,CMedia
+USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91,CMedia
+HOST-SUFFIX,cmvideo.cn,CMedia
+HOST-SUFFIX,migu.cn,CMedia
+HOST-SUFFIX,miguvideo.com,CMedia
+
+# > MOOMusic
+USER-AGENT,MOO%E9%9F%B3%E4%B9%90*,CMedia
+
+# > QQMusic
+USER-AGENT,QQ%e9%9f%b3%e4%b9%90*,CMedia
+USER-AGENT,QQMusic*,CMedia
+HOST-SUFFIX,*music.qq.com,CMedia
+HOST-SUFFIX,y.qq.com,CMedia
+HOST,aqqmusic.tc.qq.com,CMedia
+
+# > Tencent Video
+USER-AGENT,live4iphone*,CMedia
+USER-AGENT,qqlive4iphone*,CMedia
+USER-AGENT,TencentMidasConnect*,CMedia
+HOST-SUFFIX,v.qq.com,CMedia
+HOST-SUFFIX,video.qq.com,CMedia
+
+# > Xiami Music
+USER-AGENT,xiami*,CMedia
+HOST-SUFFIX,xiami.com,CMedia
+HOST-SUFFIX,xiami.net,CMedia
+
+# > Youku
+USER-AGENT,Youku*,CMedia
+USER-AGENT,%E4%BC%98%E9%85%B7*,CMedia
+HOST-SUFFIX,soku.com,CMedia
+HOST-SUFFIX,youku.com,CMedia
+HOST-SUFFIX,ykimg.com,CMedia
