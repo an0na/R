@@ -1,0 +1,13 @@
+;QX
+http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=Node_One
+http=taron.top:100, tag=Node_Two
+http=music.griouges.cn:39000, tag=Node_Three
+shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=Node_Four
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=Node_Five
+
+;loon
+🎧𝐌𝐮𝐬𝐢𝐜𝟏 = http,106.52.127.72,19951
+🎧𝐌𝐮𝐬𝐢𝐜𝟐 = http,taron.top,100
+🎧𝐌𝐮𝐬𝐢𝐜𝟑 = http,music.griouges.cn,39000
+🎧𝐌𝐮𝐬𝐢𝐜𝟒 = Shadowsocks,music.desperadoj.com,30001,aes-128-gcm,"desperadoj.com_free_proxy_x80j"
+🎧𝐌𝐮𝐬𝐢𝐜𝟓 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,"desperadoj.com_free_proxy_x80j"
