@@ -1222,7 +1222,10 @@ HOST-SUFFIX,admx.baixing.com,AdBlock
 HOST-SUFFIX,adn.ebay.com,AdBlock
 HOST-SUFFIX,adn.insight.ucweb.com,AdBlock
 HOST-SUFFIX,adnetpub.yaolan.com,AdBlock
-HOST-SUFFIX,adnew.wifi8.com,AdBlock
+;HOST-SUFFIX,adnew.wifi8.com,AdBlock
+HOST-SUFFIX,cmsapi.wifi8.com,AdBlock
+HOST,adfile.wifi8.com,AdBlock
+HOST,adnew.wifi8.com,AdBlock
 HOST-SUFFIX,adnxs.com,AdBlock
 HOST-SUFFIX,adobe-dns.adobe.com,AdBlock
 HOST-SUFFIX,adobe-dns-2.adobe.com,AdBlock
@@ -2393,7 +2396,6 @@ HOST-SUFFIX,cmp288.com,AdBlock
 HOST-SUFFIX,cmpp.gentags.net,AdBlock
 HOST-SUFFIX,cms.an.m.liebao.cn,AdBlock
 HOST-SUFFIX,cms.quantserve.com,AdBlock
-HOST-SUFFIX,cmsapi.wifi8.com,AdBlock
 HOST-SUFFIX,cmshow.gtimg.cn,AdBlock
 HOST-SUFFIX,cmslayue.com,AdBlock
 HOST-SUFFIX,cmx.autohome.com.cn,AdBlock
