@@ -1,6 +1,6 @@
 # QX https://github.com/Mazetsz/ACL4SSR/blob/master/Clash/Netini.list
-http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_One
+http=music.griouges.cn:39000, tag=𝐌𝐮𝐬𝐢𝐜_One
 http=taron.top:100, tag=𝐌𝐮𝐬𝐢𝐜_Two
-http=music.griouges.cn:39000, tag=𝐌𝐮𝐬𝐢𝐜_Three
+http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Three
 shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Four
 shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Five
