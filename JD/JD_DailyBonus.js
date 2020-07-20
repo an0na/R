@@ -93,7 +93,7 @@ var LogDetails = false; //是否开启响应日志, true则开启
 
 var stop = 0; //自定义延迟签到,单位毫秒. 默认分批并发无延迟. 延迟作用于每个签到接口, 如填入延迟则切换顺序签到(耗时较长), VPN重启或越狱用户建议填写1, Surge用户请注意在SurgeUI界面调整脚本超时
 
-var DeleteCookie = false; //是否清除Cookie, true则开启
+var DeleteCookie = true; //是否清除Cookie, true则开启
 
 var out = 0; //接口超时退出, 用于可能发生的网络不稳定, 0则关闭. 如QX日志出现大量"JS Context timeout"后脚本中断时, 建议填写6000
 
