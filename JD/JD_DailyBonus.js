@@ -215,7 +215,7 @@ function notify() {
       }
       //账号三签到
       if (ThreeAccount) {
-        three();
+        triple();
       } else {
         $nobyda.time();
         $nobyda.done();
@@ -328,7 +328,7 @@ function double() {
   }
 }
 
-function three() {
+function triple() {
   initial()
   addThree = true
   ThreeAccount = false
