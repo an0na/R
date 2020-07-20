@@ -6,7 +6,7 @@
   "repo": "https://github.com/Minishifeng/R/tree/master",
   "apps": [{
     "id": "多合一签到|Mini",
-    "name": "京东|Mini",
+    "name": "京东",
     "keys": ["CookieJD", "CookieJD2","CookieJD3"],
     "settings": [{
       "id": "JD_DailyBonusLog",
