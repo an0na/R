@@ -3,7 +3,7 @@
   "name": "Mini 脚本订阅",
   "author": "@NobyDa",
   "icon": "https://avatars2.githubusercontent.com/u/53217160",
-  "repo": "https://github.com/NobyDa/Script/tree/master",
+  "repo": "https://github.com/Minishifeng/R/tree/master",
   "apps": [{
     "id": "多合一签到|Mini",
     "name": "京东",
@@ -66,7 +66,7 @@
       "desc": "延迟作用于每个签到接口, 如填入延迟则切换顺序签到(耗时较长), VPN重启或越狱用户建议填写1, Surge用户请注意在SurgeUI界面调整脚本超时"
     }],
     "author": "@NobyDa",
-    "repo": "https://github.com/NobyDa/Script/tree/master/JD-DailyBonus",
+    "repo": "https://github.com/Minishifeng/R/tree/master/JD",
     "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/jd.png", "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"]
   }]
 }
