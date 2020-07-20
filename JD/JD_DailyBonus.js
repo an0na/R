@@ -15,11 +15,11 @@
 
 开启抓包app后, Safari浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历后, 返回抓包app搜索关键字 functionId=signBean 复制请求头Cookie填入以下Key处的单引号内即可 */
 
-var Key = ''; //单引号内自行填写您抓取的Cookie
+var Key = 'pt_key=AAJfEQuHADCMWJvicZUI5TfbrPucDe0tL042ToRdS_nbKSED90ROOBP2N7lhkHtVeFjHaJzxpfs;pt_pin=jd_5684bc2e3bc8d;'; //单引号内自行填写您抓取的Cookie
 
-var DualKey = ''; //如需双账号签到,此处单引号内填写抓取的"账号2"Cookie, 否则请勿填写
+var DualKey = 'pt_key=AAJfFUALADCviUQWHI0rpntwbJA0sEI3Qq1eyfyWyB9OyYcOQrfwuDZisx883p19SHZJqQR8OUQ;pt_pin=%E5%BF%83%E6%99%B4412;'; //如需双账号签到,此处单引号内填写抓取的"账号2"Cookie, 否则请勿填写
 
-var ThreeKey = ''; //如需三账号签到,此处单引号内填写抓取的"账号3"Cookie, 否则请勿填写
+var ThreeKey = 'pt_key=AAJfFT6eADDdQPFRocs995k2rtzPXJIQt9ip0F8PVZ7b8AcWGry3B6aZX9-FgLOUp1lQVrTG0mk;pt_pin=jd_EYAxYHyCPNtN;'; //如需三账号签到,此处单引号内填写抓取的"账号3"Cookie, 否则请勿填写
 
 /* 注1: 以上选项仅针对于JsBox或Node.js, 如果使用QX,Surge,Loon, 请使用脚本获取Cookie.
    注2: 双账号用户抓取"账号1"Cookie后, 请勿点击退出账号(可能会导致Cookie失效), 需清除浏览器资料或更换浏览器登录"账号2"抓取.
