@@ -20,6 +20,7 @@ function GetCookie() {
         $nobyda.done()
         return
       }
+    }
   } catch (eor) {
     $nobyda.notify("异常", "", '')
     console.log(JSON.stringify(eor) + "\n" + eor + "\n" + JSON.stringify($request.headers))
