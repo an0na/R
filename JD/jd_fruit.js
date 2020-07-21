@@ -19,17 +19,13 @@ let name = '东东农场';
 const $ = new Env(name);
 const Key = '';//单引号内自行填写您抓取的京东Cookie
 //直接用NobyDa的jd cookie
-const cookie =  Key ? Key : $.getdata('CookieJD');
+const cookie =  Key ? Key : $.getdata('CookieJD2');
 //京东接口地址
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 
 let jdNotify = $.getdata('jdFruitNotify');
 //助力好友分享码(最多4个,否则后面的助力失败),原因:京东农场每人每天只有四次助力机会
 let shareCodes = [ // 这个列表填入你要助力的好友的shareCode
-  'a6f686a9f6aa4c80977370b03681c553',
-  'f92cb56c6a1349f5a35f0372aa041ea0',
-  'a9360baeceb04c9baaaa109f5d428d3c',
-  '61ff5c624949454aa88561f2cd721bf6',
   '40dbf12bb7ea4b8eb772741afe2125da'
 ]
 // 添加box功能
