@@ -1,4 +1,6 @@
 # Ads in Video apps
+HOST-SUFFIX,res.hanju.koudaibaobao.com,AdBlock
+HOST-SUFFIX,api.hanju.koudaibaobao.com,AdBlock
 # > iQIYI & PPS
 HOST-SUFFIX,a.ckm.iqiyi.com,AdBlock
 HOST-SUFFIX,ad.m.iqiyi.com,AdBlock
