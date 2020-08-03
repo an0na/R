@@ -23,8 +23,9 @@ let jdNotify = $.getdata('jdPlantBeanNotify');
 //京东接口地址
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 
-var plantUuids = [ // 这个列表填入你要助力的好友的plantUuid
-    'mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry','rthzjmt5fg46ol57wmyygsvo5u5ac3f4ijdgqji'
+var plantUuids = [
+    'mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry',
+    'rthzjmt5fg46ol57wmyygsvo5u5ac3f4ijdgqji'
 ]
 let currentRoundId = null;//本期活动id
 let lastRoundId = null;//上期id
@@ -40,7 +41,7 @@ isBox = boxShareCodeArr.some((item) => {
   const boxShareCode = $.getdata(item);
   return (boxShareCode !== undefined && boxShareCode !== null && boxShareCode !== '');
 });
-if (isBox) {
+if (false) {
   plantUuids = [];
   for (const item of boxShareCodeArr) {
     if ($.getdata(item)) {
