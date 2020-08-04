@@ -25,7 +25,8 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 
 var plantUuids = [
     'mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry',
-    'rthzjmt5fg46ol57wmyygsvo5u5ac3f4ijdgqji'
+    'rthzjmt5fg46ol57wmyygsvo5u5ac3f4ijdgqji',
+    '4npkonnsy7xi3bqjlwxbqywv7xykra5am5ebkaa'
 ]
 let currentRoundId = null;//本期活动id
 let lastRoundId = null;//上期id
