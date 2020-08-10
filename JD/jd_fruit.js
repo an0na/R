@@ -1,4 +1,4 @@
-// https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jd_fruit.js
+//https://github.com/lxk0301/scripts
 
 let name = '东东农场';
 const $ = new Env(name);
