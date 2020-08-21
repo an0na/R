@@ -5,7 +5,7 @@ const $ = new Env(name);
 const Key = '';//单引号内自行填写您抓取的京东Cookie
 //直接用NobyDa的jd cookie
 const cookie =  Key ? Key : $.getdata('CookieJD2');
-let jdNotify = $.getdata('jdPlantBeanNotify');
+let jdNotify = 'true';
 
 //京东接口地址
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
