@@ -47,10 +47,8 @@ QuantumultX 中使用到的一些脚本(因为现在都是远程调用，这个�
 ## 特别感谢(排名不分先后)：
 * [@NobyDa](https://github.com/NobyDa)
 
+* [@lxk0301](https://github.com/lxk0301)
+
 * [@chavyleung](https://github.com/chavyleung)
 
-* [@Zero-S1](https://github.com/Zero-S1)
-
 * [@nzw9314](https://github.com/nzw9314)
-
-* [@lxk0301](https://github.com/lxk0301)
