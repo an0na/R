@@ -5,7 +5,7 @@
  * @Last Modified time: 2020-10-24 23:04:14
  */
 const $ = new Env('Webhook触发Action');
-let ACTIONS_TRIGGER_TOKEN = 'eb77173a64df1715b0bf6b49f41153e1e7fbedd8';//910e232efd66f66396eafa0f293e96638e191676 Personal access tokens，申请教程:https://www.jianshu.com/p/bb82b3ad1d11 记得勾选repo权限就行
+let ACTIONS_TRIGGER_TOKEN = '03feb9d1bf2e79246dd86480507ab057c21f9ad9';//910e232efd66f66396eafa0f293e96638e191676 Personal access tokens，申请教程:https://www.jianshu.com/p/bb82b3ad1d11 记得勾选repo权限就行
 let TRIGGER_KEYWORDS = 'blueCoin';//.github/workflows/路径里面yml文件里面repository_dispatch项目的types值，例如jd_fruit.yml里面的值为fruit
 let githubUser = 'an0na';//github用户名，例:lxk0301
 let repo = 'scripts';//需要触发的 Github Action 所在的仓库名称 例:scripts
