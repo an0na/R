@@ -2,7 +2,7 @@
  * @Author: lxk0301 
  * @Date: 2020-10-21 17:04:04 
  * @Last Modified by: lxk0301
- * @Last Modified time: 2020-10-26 09:35:04
+ * @Last Modified time: 2020-10-31 00:35:04
  */
 /**
  星推官脚本 https://raw.githubusercontent.com/lxk0301/scripts/master/jd_xtg.js
@@ -24,7 +24,7 @@
  // Surge
  京东星推官 = type=cron,cronexp=2 0 * * *,wake-system=1,timeout=320,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_xtg.js
  */
-const $ = new Env('星推官');
+const $ = new Env('京东星推官');
 const activeEndTime = '2020/11/13 00:00:00';//活动结束时间
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
@@ -42,6 +42,7 @@ if ($.isNode()) {
   cookiesArr.push($.getdata('CookieJD2'));
 }
 const starID = [
+  'skgwangyibo',
   'haiermaoxiaotong',
   'laobansongweilong',
   'lgyangzishan',
@@ -60,6 +61,7 @@ const starID = [
   'oulebyangzi',
   'bolangwutiaoren',
 ];
+
 const shareID = [];
 const JD_API_HOST = 'https://urvsaggpt.m.jd.com/guardianstar';
 !(async () => {
@@ -74,9 +76,10 @@ const JD_API_HOST = 'https://urvsaggpt.m.jd.com/guardianstar';
       $.index = i + 1;
       $.beanCount = 0;
       $.jdNum = 0;
-      console.log(`\n开始【京东账号${$.index}】${$.UserName}\n`);
+      console.log(`\n===============开始【京东账号${$.index}】${$.UserName}==================\n`);
       console.log(`一共${starID.length}个${$.name}任务，耗时会很久，请提前知晓`)
-      await TotalBean();
+      const beforeTotal = await TotalBean();
+      $.beanCount = beforeTotal && beforeTotal['base'].jdNum;
       for (let index = 0; index < starID.length; index ++) {
         $.activeId = starID[index];
         $.j = index;
@@ -91,6 +94,8 @@ const JD_API_HOST = 'https://urvsaggpt.m.jd.com/guardianstar';
         await JD_XTG();
         await doSupport(shareID[index]);
       }
+      const afterTotal = await TotalBean();
+      $.jdNum = afterTotal['base'].jdNum;
       await showMsg();
     }
   }
@@ -103,12 +108,8 @@ const JD_API_HOST = 'https://urvsaggpt.m.jd.com/guardianstar';
     })
 async function showMsg() {
   console.log(`\n做任务之前京豆总计:${$.beanCount}`)
-  const tempData = await TotalBean();
-  if (tempData && tempData['base']) {
-    $.jdNum = tempData['base'].jdNum;
-    console.log(`做完任务后京豆总计:${tempData['base'].jdNum}`);
-    console.log(`活动活动京豆数量:${$.jdNum - $.beanCount}`);
-  }
+  console.log(`做完任务后京豆总计:${$.jdNum}`);
+  console.log(`活动活动京豆数量:${$.jdNum - $.beanCount}`);
   let nowTime = Date.now();
   const zone = new Date().getTimezoneOffset();
   if (zone === 0) {
@@ -118,8 +119,8 @@ async function showMsg() {
     $.msg($.name, '活动已结束', `请删除或禁用此脚本\n如果帮助到您可以点下🌟STAR鼓励我一下,谢谢\n咱江湖再见\nhttps://github.com/lxk0301/scripts`, {"open-url": "https://github.com/lxk0301/scripts"});
     if ($.isNode()) await notify.sendNotify($.name + '活动已结束', `请删除此脚本\n如果帮助到您可以点下🌟STAR鼓励我一下,谢谢\n咱江湖再见\nhttps://github.com/lxk0301/scripts`)
   } else {
-    $.msg($.name, `账号${$.index} ${$.UserName}`, `任务已做完\n${($.jdNum - $.beanCount) > 0 ? `获得京豆：${$.jdNum - $.beanCount}个京豆 🐶\n` : ''}京豆先到先得\n活动地址点击弹窗跳转后即可查看\n注：如未获得京豆就是已被分完`, {"open-url": "https://prodev.m.jd.com/mall/active/3gSzKSnvrrhYushciUpzHcDnkYE3/index.html"})
-    if ($.isNode()) await notify.sendNotify(`${$.name}`, `账号${$.index} ${$.UserName}\n任务已做完\n${($.jdNum - $.beanCount) > 0 ? `获得京豆：${$.jdNum - $.beanCount}个京豆 🐶\n` : ''}京豆先到先得\n注：如未获得京豆就是已被分完\n活动地址：https://prodev.m.jd.com/mall/active/3gSzKSnvrrhYushciUpzHcDnkYE3/index.html`)
+    $.msg($.name, `账号${$.index} ${$.UserName}`, `任务已做完\n做任务之前京豆总计:${$.beanCount}\n做完任务后京豆总计:${$.jdNum}\n${($.jdNum - $.beanCount) > 0 ? `获得京豆：${$.jdNum - $.beanCount}京豆 🐶(仅供参考)\n` : ''}京豆先到先得\n活动地址点击弹窗跳转后即可查看\n注：如未获得京豆就是已被分完`, {"open-url": "https://prodev.m.jd.com/mall/active/3gSzKSnvrrhYushciUpzHcDnkYE3/index.html"})
+    if ($.isNode()) await notify.sendNotify(`${$.name}`, `账号${$.index} ${$.UserName}\n任务已做完\n做任务之前京豆总计:${$.beanCount}\n做完任务后京豆总计:${$.jdNum}\n${($.jdNum - $.beanCount) > 0 ? `获得京豆：${$.jdNum - $.beanCount}京豆 🐶(仅供参考)\n` : ''}京豆先到先得\n注：如未获得京豆就是已被分完\n活动地址：https://prodev.m.jd.com/mall/active/3gSzKSnvrrhYushciUpzHcDnkYE3/index.html`)
   }
 }
 async function JD_XTG() {
@@ -284,7 +285,7 @@ function TotalBean() {
           if (data) {
             data = JSON.parse(data);
             if (data['retcode'] === 0) {
-              $.beanCount = data['base'].jdNum;
+              // $.beanCount = data['base'].jdNum;
             }
           } else {
             console.log(`京东服务器返回空数据`)
