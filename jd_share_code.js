@@ -12,25 +12,30 @@
 * 0 0 9 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_share_code.js, tag=京东助力码上车, enabled=true
 * 
 */
-
 const $ = new Env('京东助力码上车');
 
-let fruitArr = ['732c806d465d427aab0c948e2ef8de17','1a3547c6feb4423487d2f450adda3f35','f1d15dd3dfa745e293b2343e85f0e065'];
+let farmArr = ['732c806d465d427aab0c948e2ef8de17','1a3547c6feb4423487d2f450adda3f35','f1d15dd3dfa745e293b2343e85f0e065'];
 let beanArr = ['mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry','oikq73shoy33yjni64vntotbbm','4npkonnsy7xi3sny36skom3edho6thyj4hexnvy'];
 let petArr = ['MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==','MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==','MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE='];
 let ddfactoryArr = [];
 let jxfactoryArr = [];
+
+let farmApi = "http://api.turinglabs.net/api/v1/jd/farm/create/互助码/";
+let beanApi = "http://api.turinglabs.net/api/v1/jd/bean/create/互助码/";
+let petApi = "http://api.turinglabs.net/api/v1/jd/pet/create/互助码/";
+let ddfactoryApi = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/互助码/";
+let jxfactoryApi = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助码/";
 
 //上面有几个数组,num就是几
 let num = 3;
 
 !(async () => {
   for (let i = 0; i < num; i++) {
-      $.msg(`【`+ getName(i) + `】农场水果-助力码上车`, ``, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/farm/create/`+ fruitArr[i]});
-      $.msg(`【`+ getName(i) + `】种豆得豆-助力码上车`, ``, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/bean/create/`+ beanArr[i]});
-      $.msg(`【`+ getName(i) + `】萌宠-助力码上车`, ``, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/pet/create/`+ petArr[i]});
-      //$.msg(userName, `东东工厂助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/ddfactory/create/`+ ddfactoryArr[i]});
-      //$.msg(userName, `京喜工厂助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/jxfactory/create/`+ jxfactoryArr[i]});
+      $.msg(`【`+ getName(i) + `】农场水果-助力码上车`, ``, ``, {"open-url": farmApi.replace("互助码", farmArr[i])});
+      $.msg(`【`+ getName(i) + `】种豆得豆-助力码上车`, ``, ``, {"open-url": beanApi.replace("互助码", beanArr[i])});
+      $.msg(`【`+ getName(i) + `】萌宠-助力码上车`, ``, ``, {"open-url": petApi.replace("互助码", petArr[i])});
+      //$.msg(`【`+ getName(i) + `】东东工厂-助力码上车`, ``, ``, {"open-url": ddfactoryApi.replace("互助码", ddfactoryArr[i])});
+      //$.msg(`【`+ getName(i) + `】京喜工厂-助力码上车`, ``, ``, {"open-url": jxfactoryApi.replace("互助码", xfactoryArr[i])});
   }
 })().catch((e) => {
   $.log('', `异常!`, '')
