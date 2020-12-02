@@ -1,6 +1,12 @@
-//每个月1号，10号，20号凌晨2点清理一次数据库，清理后需重新点击链接提交互助码。
-//所以corn表达式是每月1，10，20号的早上9点,发送提醒上车
-//0 0 9 1,10,20 * ? *
+/**
+* https://github.com/lxk0301/jd_scripts/tree/master
+* 每个月1号，10号，20号凌晨2点清理一次数据库，清理后需重新点击链接提交互助码。
+* 
+* 每月1，10，20号的早上9点发送提醒上车
+* 0 0 9 1,10,20 * ? *
+* 
+* modify Date: 2020-12-2 17:52:28
+*/
 
 const $ = new Env('京东助力码上车');
 
@@ -9,14 +15,15 @@ let beanArr = ['mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry','oikq73shoy33yjni64vnto
 let petArr = ['MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==','MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==','MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE='];
 let ddfactoryArr = [];
 let jxfactoryArr = [];
+
+//上面有几个数组,num就是几
 let num = 3;
 
 !(async () => {
   for (let i = 0; i < num; i++) {
-      var userName = getName(i);
-      $.msg(userName, `农场水果助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/farm/create/`+ fruitArr[i]});
-      $.msg(userName, `种豆得豆助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/bean/create/`+ beanArr[i]});
-      $.msg(userName, `萌宠助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/pet/create/`+ petArr[i]});
+      $.msg(`【`+ getName(i) + `】农场水果-助力码上车`, ``, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/farm/create/`+ fruitArr[i]});
+      $.msg(`【`+ getName(i) + `】种豆得豆-助力码上车`, ``, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/bean/create/`+ beanArr[i]});
+      $.msg(`【`+ getName(i) + `】萌宠-助力码上车`, ``, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/pet/create/`+ petArr[i]});
       //$.msg(userName, `东东工厂助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/ddfactory/create/`+ ddfactoryArr[i]});
       //$.msg(userName, `京喜工厂助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/jxfactory/create/`+ jxfactoryArr[i]});
   }
