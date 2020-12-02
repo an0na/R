@@ -1,14 +1,21 @@
-const $ = new Env('助力码上车');
+const $ = new Env('京东助力码上车');
 
-let shareCodeArr = ['mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry'], shareCode = '';
+let fruitArr = ['732c806d465d427aab0c948e2ef8de17','1a3547c6feb4423487d2f450adda3f35','f1d15dd3dfa745e293b2343e85f0e065'];
+let beanArr = ['mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry','oikq73shoy33yjni64vntotbbm','4npkonnsy7xi3sny36skom3edho6thyj4hexnvy'];
+let petArr = ['MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==','MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==','MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE='];
+
 !(async () => {
-  for (let i = 0; i < shareCodeArr.length; i++) {
-      shareCode = shareCodeArr[i];
-      
-      await GoCar(shareCode);
-
-      //console.log(`\n助力上车成功：【${$.code}】 ： ${$.message}\n`);
-      $.msg(`助力上车成功`, `返回码:${$.code}`, `返回信息:${$.message}`, {"open-url": `${$.reqUrl}`});
+  for (let i = 0; i < fruitArr.length; i++) {
+      var userName = getName(i);
+      $.msg(userName, `农场水果助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/farm/create/`+ fruitArr[i]});
+  }
+  for (let i = 0; i < beanArr.length; i++) {
+      var userName = getName(i);
+      $.msg(userName, `农场水果助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/bean/create/`+ beanArr[i]});
+  }
+  for (let i = 0; i < petArr.length; i++) {
+      var userName = getName(i);
+      $.msg(userName, `农场水果助力码上车`, ``, {"open-url": `http://api.turinglabs.net/api/v1/jd/pet/create/`+ petArr[i]});
   }
 })().catch((e) => {
   $.log('', `异常!`, '')
@@ -17,49 +24,16 @@ let shareCodeArr = ['mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry'], shareCode = '';
   $.done();
 })
 
-//{"code":200,"message":"msg","data":null}
-function GoCar(shareCode) {
-  $.reqUrl = 'http://api.turinglabs.net/api/v1/jd/bean/create/'+shareCode+'/';
-
-  return new Promise(async resolve => {
-    const options = {
-      "url": `http://api.turinglabs.net/api/v1/jd/bean/create/`+ shareCode +`/`,
-      "headers": {
-        "Accept": "application/json,text/html, */*",
-        "Content-Type": "text/html",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Accept-Language": "zh-cn",
-        "Connection": "keep-alive"
-        //"Cookie": cookie,
-        //"Referer": "https://wqs.jd.com/my/jingdou/my.shtml?sceneval=2",
-        //"User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0") : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0")
-      }
+function getName(i) {
+    let userName = "";
+    if(i == 0){
+      userName = "自己";
+    }else if(i ==1){
+      userName = "姐姐";
+    }else if(i ==2){
+      userName = "妈妈";
     }
-    $.post(options, (err, resp, data) => {
-      try {
-        if (err) {
-          console.log(`助力码上车异常: ${JSON.stringify(err)}`);
-        } else {
-
-          console.log(`data： ${JSON.stringify(data)}`);
-          console.log(`resp： ${JSON.stringify(resp)}`);
-
-          if (data) {
-            //data = JSON.parse(data);
-            //$.code = data['code'];
-            //$.message = data['message'];
-            //$.data = data['data'];
-          } else {
-            console.log(`服务器返回空数据`)
-          }
-        }
-      } catch (e) {
-        $.logErr(e, resp)
-      } finally {
-        resolve(data);
-      }
-    })
-  })
+    return userName;
 }
 
 // prettier-ignore
