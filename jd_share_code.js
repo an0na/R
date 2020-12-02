@@ -7,7 +7,7 @@ let shareCodeArr = ['mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry'], shareCode = '';
       
       await GoCar(shareCode);
 
-      console.log(`\n助力上车成功：【${$.code}】 ： ${$.message}\n`);
+      //console.log(`\n助力上车成功：【${$.code}】 ： ${$.message}\n`);
       $.msg(`助力上车成功`, `返回码:${$.code}`, `返回信息:${$.message}`, {"open-url": `${$.reqUrl}`});
   }
 })().catch((e) => {
@@ -25,8 +25,8 @@ function GoCar(shareCode) {
     const options = {
       "url": `http://api.turinglabs.net/api/v1/jd/bean/create/`+ shareCode +`/`,
       "headers": {
-        "Accept": "application/json,text/plain, */*",
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Accept": "application/json,text/html, */*",
+        "Content-Type": "text/html",
         "Accept-Encoding": "gzip, deflate, br",
         "Accept-Language": "zh-cn",
         "Connection": "keep-alive"
@@ -45,9 +45,9 @@ function GoCar(shareCode) {
           console.log(`resp： ${JSON.stringify(resp)}`);
 
           if (data) {
-            data = JSON.parse(data);
-            $.code = data['code'];
-            $.message = data['message'];
+            //data = JSON.parse(data);
+            //$.code = data['code'];
+            //$.message = data['message'];
             //$.data = data['data'];
           } else {
             console.log(`服务器返回空数据`)
