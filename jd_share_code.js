@@ -23,7 +23,17 @@ function GoCar(shareCode) {
 
   return new Promise(async resolve => {
     const options = {
-      "url": `http://api.turinglabs.net/api/v1/jd/bean/create/`+ shareCode +`/`
+      "url": `http://api.turinglabs.net/api/v1/jd/bean/create/`+ shareCode +`/`,
+      "headers": {
+        "Accept": "application/json,text/plain, */*",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "zh-cn",
+        "Connection": "keep-alive"
+        //"Cookie": cookie,
+        //"Referer": "https://wqs.jd.com/my/jingdou/my.shtml?sceneval=2",
+        //"User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0") : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0")
+      }
     }
     $.post(options, (err, resp, data) => {
       try {
