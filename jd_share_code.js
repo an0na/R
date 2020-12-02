@@ -28,13 +28,14 @@ function GoCar(shareCode) {
     $.post(options, (err, resp, data) => {
       try {
         if (err) {
-          console.log(`助力码上车异常: ${JSON.stringify(err)}`)
+          console.log(`助力码上车异常: ${JSON.stringify(err)}`);
         } else {
+
+          console.log(`data： ${JSON.stringify(data)}`);
+          console.log(`resp： ${JSON.stringify(resp)}`);
+
           if (data) {
             data = JSON.parse(data);
-
-            console.log(`response： ${JSON.stringify(data)}`)
-
             $.code = data['code'];
             $.message = data['message'];
             //$.data = data['data'];
