@@ -61,7 +61,7 @@ let jxfactoryApi = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助�
 function goCar() {
   //$.reqUrl = 'http://api.turinglabs.net/api/v1/jd/bean/create/'+shareCode+'/';
   return new Promise(resolve => {
-    $.post({url: `http://api.turinglabs.net/api/v1/jd/bean/create/mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry/`}, (err, resp, data) => {
+    $.get({url: `http://api.turinglabs.net/api/v1/jd/bean/create/mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry/`}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
