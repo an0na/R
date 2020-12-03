@@ -1,45 +1,7 @@
-/**
-* Date: 2020-12-2 17:52:28
-*
-* https://github.com/lxk0301/jd_scripts/tree/master
-* 每个月1号，10号，20号凌晨2点清理一次数据库，清理后需重新点击链接提交互助码。
-* 
-* 故选择：每月1，10，20号的早上9点发送提醒上车
-* 
-* ==========================Quantumultx=========================
-* [task_local]
-* #京东助力码上车
-* 0 0 9 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_share_code.js, tag=京东助力码上车, enabled=true
-* 
-*/
+
 const $ = new Env('京东助力码上车');
 
-//let allCode = "732c806d465d427aab0c948e2ef8de17@1a3547c6feb4423487d2f450adda3f35@f1d15dd3dfa745e293b2343e85f0e065&mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry@oikq73shoy33yjni64vntotbbm@4npkonnsy7xi3sny36skom3edho6thyj4hexnvy&MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==@MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==@MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE=";
 
-//【自定义的地方】请按照水果、种豆、宠物的顺序添加自己的助力码
-//例子：A@A1@A2&B@B1@B2&C@C1@C2   每种活动的多个账号助力码使用@连接,活动和活动之间使用&连接
-let allCode = "";
-
-let farmArr = ['732c806d465d427aab0c948e2ef8de17','1a3547c6feb4423487d2f450adda3f35','f1d15dd3dfa745e293b2343e85f0e065'];
-let beanArr = ['mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry','oikq73shoy33yjni64vntotbbm','4npkonnsy7xi3sny36skom3edho6thyj4hexnvy'];
-let petArr = ['MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==','MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==','MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE='];
-let ddfactoryArr = [];
-let jxfactoryArr = [];
-
-if(allCode){
-  let array = allCode.split('&');
-  farmArr = array[0].split('@');
-  beanArr = array[1].split('@');
-  petArr = array[2].split('@');
-  ddfactoryArr = [];
-  jxfactoryArr = [];
-}
-
-let farmApi = "http://api.turinglabs.net/api/v1/jd/farm/create/互助码/";
-let beanApi = "http://api.turinglabs.net/api/v1/jd/bean/create/互助码/";
-let petApi = "http://api.turinglabs.net/api/v1/jd/pet/create/互助码/";
-let ddfactoryApi = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/互助码/";
-let jxfactoryApi = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助码/";
 
 !(async () => {
 //   for (let i = 0; i < 3; i++) {
