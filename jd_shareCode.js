@@ -20,27 +20,26 @@ let shareCodes = [
     'MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==@MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==@MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE=',
     'P04z54XCjVWnYaS5m9cZ2X-1XgYxv6NlmvdOLc@P04z54XCjVWnYaS5uCHu7ZRWXhLlw@P04z54XCjVWnYaS5m9cZ2fw2XQcx1lt6MuNaBc',
     'lqOBaIFQnaNP1Lap6uj6lQ==@QCiqrXOSPRtGWQ-mTAyQsQ=='
-]
+];
 
 !(async () => {
    for (let i = 0; i < shareCodes.length; i++) {
-        for (let j = 0; j < shareCodes[i].split('@').length; j++) {
-            var code = shareCodes[i].split('@')[j];
-            if(code){
-                var userName = getUserName(j);
-                var reqUrl = getReqUrl(code, i);
-                var activityName = getActivityName(i);
+        var arr = shareCodes[i].split('@');
+        for (let j = 0; j < arr.length; j++) {
+            var code = arr[j];
+            var userName = getUserName(j);
+            var reqUrl = getReqUrl(code, i);
+            var activityName = getActivityName(i);
 
-                console.log(`\n 账号：`+ userName + `,活动：`+ activityName + `,请求地址：`+ reqUrl);
+            console.log(`\n 账号：`+ userName + `,活动：`+ activityName + `,请求地址：`+ reqUrl);
 
-                await goCar(reqUrl);
+            await goCar(reqUrl);
 
-                $.msg(`【账号` + userName +`】`+ activityName, `返回码：${$.code}, 返回信息：${$.message}`, ``, {"open-url": reqUrl });
+            $.msg(`【账号` + userName +`】`+ activityName, `返回码：${$.code}, 返回信息：${$.message}`, ``, {"open-url": reqUrl });
 
-                sleep(1000).then(() => {
-                    console.log(`休息1秒`);
-                });
-            }
+            sleep(1000).then(() => {
+                console.log(`休息1秒`);
+            });   
         }
    }
 })().catch((e) => {
