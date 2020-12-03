@@ -29,7 +29,7 @@ let shareCodes = [
 
 !(async () => {
    for (let i = 0; i < shareCodes.length; i++) {
-        for (let j = 0; j < shareCodes.length; j++) {
+        for (let j = 0; j < shareCodes[i].split('@').length; j++) {
             var code = shareCodes[i].split('@')[j];
 
             var userName = getUserName(j);
@@ -42,8 +42,8 @@ let shareCodes = [
 
             $.msg(`【账号` + userName +`】`+ activityName, `返回码：${$.code}, 返回信息：${$.message}`, ``, {"open-url": reqUrl });
 
-            sleep(500).then(() => {
-                console.log(`休息1s`);
+            sleep(1000).then(() => {
+                console.log(`休息1秒`);
             });
         }
    }
@@ -89,7 +89,7 @@ function getUserName(j) {
     }else if(j == 2){
       userName = "妈妈";
     }else{
-      userName = "未知";
+      userName = "用户"+ (j+1);
     }
     return userName;
 }
