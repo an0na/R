@@ -29,28 +29,24 @@ let shareCodes = [
 
 !(async () => {
    for (let i = 0; i < shareCodes.length; i++) {
-        for (let j = 0; i < shareCodes.length; j++) {
+        for (let j = 0; j < shareCodes.length; j++) {
             var code = shareCodes[i].split('@')[j];
 
-            //获取账户名userName
-            getUserName(j);
-
-            //获取reqUrl和活动名activityName
+            var userName = getUserName(j);
             var reqUrl = getReqUrl(code, i);
+            var activityName = getActivityName(i);
 
-            console.log(`\账号：${$.userName},活动：${$.activityName},请求地址：${$.reqUrl}`);
+            console.log(`\n 账号：`+ userName + `,活动：`+ activityName + `,请求地址：`+ reqUrl);
 
-            //请求上车
             goCar(reqUrl);
 
-            $.msg(`【账号${$.userName}】${$.activityName}`, `返回码：${$.code}, 返回信息：${$.message}`, ``, {"open-url": `${$.reqUrl}`});
+            $.msg(`【账号` + userName +`】`+ activityName, `返回码：${$.code}, 返回信息：${$.message}`, ``, {"open-url": reqUrl });
 
             sleep(1000).then(() => {
                 console.log(`休息1s`);
             })
         }
    }
-  goCar();
 })().catch((e) => {
   $.log('', `异常!`, '')
 })
@@ -60,8 +56,6 @@ let shareCodes = [
 
 //上车
 function goCar(reqUrl) {
-  $.reqUrl = reqUrl;
-
   return new Promise(resolve => {
     $.get({url: reqUrl}, (err, resp, data) => {
       try {
@@ -70,10 +64,11 @@ function goCar(reqUrl) {
         } else {
           if (data) {
             data = JSON.parse(data);
+            
             $.code = data['code'];
             $.message = data['message'];
 
-            console.log(`data: ${JSON.stringify(data)}`)
+            console.log(`data: ${JSON.stringify(data)}`);
           }
         }
       } catch (e) {
@@ -86,33 +81,44 @@ function goCar(reqUrl) {
 }
 
 function getUserName(j) {
+    var userName = "";
     if(j == 0){
-      $.userName = "自己";
+      userName = "自己";
     }else if(j == 1){
-      $.userName = "姐姐";
+      userName = "姐姐";
     }else if(j == 2){
-      $.userName = "妈妈";
+      userName = "妈妈";
     }else{
-      $.userName = "未知";
+      userName = "未知";
     }
+    return userName;
 }
 
 function getReqUrl(code, i) {
-    let reqUrl = "";
+    var reqUrl = "";
     if(i == 0){
-
-      $.activityName = "农场水果-助力码上车";
-      reqUrl = "http://api.turinglabs.net/api/v1/jd/farm/create/互助码/".replace("互助码", code);
+      var url = "http://api.turinglabs.net/api/v1/jd/farm/create/互助码/";
+      reqUrl = url.replace("互助码", code);
     }else if(i == 1){
-
-      $.activityName = "种豆得豆-助力码上车";
-      reqUrl = "http://api.turinglabs.net/api/v1/jd/bean/create/互助码/".replace("互助码", code);
+      var url = "http://api.turinglabs.net/api/v1/jd/bean/create/互助码/";
+      reqUrl = url.replace("互助码", code);
     }else if(i == 2){
-
-      $.activityName = "萌宠-助力码上车";
-      reqUrl = "http://api.turinglabs.net/api/v1/jd/pet/create/互助码/".replace("互助码", code);
+      var url = "http://api.turinglabs.net/api/v1/jd/pet/create/互助码/";
+      reqUrl = url.replace("互助码", code);
     }
     return reqUrl;
+}
+
+function getActivityName(i) {
+    var activityName = "";
+    if(i == 0){
+      activityName = "农场水果-助力码上车";
+    }else if(i == 1){
+      activityName = "种豆得豆-助力码上车";
+    }else if(i == 2){
+      activityName = "萌宠-助力码上车";
+    }
+    return activityName;
 }
 
 function sleep (time) {
