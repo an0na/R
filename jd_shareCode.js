@@ -42,19 +42,46 @@ let ddfactoryApi = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/互助�
 let jxfactoryApi = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助码/";
 
 !(async () => {
-  for (let i = 0; i < 3; i++) {
-      $.msg(`【`+ getName(i) + `】农场水果-助力码上车`, ``, ``, {"open-url": farmApi.replace("互助码", farmArr[i])});
-      $.msg(`【`+ getName(i) + `】种豆得豆-助力码上车`, ``, ``, {"open-url": beanApi.replace("互助码", beanArr[i])});
-      $.msg(`【`+ getName(i) + `】萌宠-助力码上车`, ``, ``, {"open-url": petApi.replace("互助码", petArr[i])});
-      //$.msg(`【`+ getName(i) + `】东东工厂-助力码上车`, ``, ``, {"open-url": ddfactoryApi.replace("互助码", ddfactoryArr[i])});
-      //$.msg(`【`+ getName(i) + `】京喜工厂-助力码上车`, ``, ``, {"open-url": jxfactoryApi.replace("互助码", xfactoryArr[i])});
-  }
+//   for (let i = 0; i < 3; i++) {
+//       $.msg(`【`+ getName(i) + `】农场水果-助力码上车`, ``, ``, {"open-url": farmApi.replace("互助码", farmArr[i])});
+//       $.msg(`【`+ getName(i) + `】种豆得豆-助力码上车`, ``, ``, {"open-url": beanApi.replace("互助码", beanArr[i])});
+//       $.msg(`【`+ getName(i) + `】萌宠-助力码上车`, ``, ``, {"open-url": petApi.replace("互助码", petArr[i])});
+//       //$.msg(`【`+ getName(i) + `】东东工厂-助力码上车`, ``, ``, {"open-url": ddfactoryApi.replace("互助码", ddfactoryArr[i])});
+//       //$.msg(`【`+ getName(i) + `】京喜工厂-助力码上车`, ``, ``, {"open-url": jxfactoryApi.replace("互助码", xfactoryArr[i])});
+//   }
+  goCar();
 })().catch((e) => {
   $.log('', `异常!`, '')
 })
 .finally(() => {
   $.done();
 })
+
+//上车
+function goCar() {
+  //$.reqUrl = 'http://api.turinglabs.net/api/v1/jd/bean/create/'+shareCode+'/';
+  return new Promise(resolve => {
+    $.post({url: `http://api.turinglabs.net/api/v1/jd/bean/create/mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry/`}, (err, resp, data) => {
+      try {
+        if (err) {
+          console.log(`${JSON.stringify(err)}`)
+        } else {
+          if (data) {
+            data = JSON.parse(data);
+            $.code = data['code'];
+            $.message = data['message'];
+            
+            console.log(`${$.code}` +`:`+ `${$.message}`);
+          }
+        }
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve(data);
+      }
+    })
+  })
+}
 
 function getName(i) {
     let userName = "";
