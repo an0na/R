@@ -101,10 +101,10 @@ function getReqUrl(code, i) {
       var url = "http://api.turinglabs.net/api/v1/jd/pet/create/互助码/";
       reqUrl = url.replace("互助码", code);
     }else if(i == 3){
-     var = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/互助码/";
+     var url = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/互助码/";
      reqUrl = url.replace("互助码", code);
     }else if(i == 4){
-     var = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助码/";
+     var url = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助码/";
      reqUrl = url.replace("互助码", code);
     }
     return reqUrl;
