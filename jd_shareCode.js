@@ -4,22 +4,16 @@
 * https://github.com/lxk0301/jd_scripts/tree/master
 * 每个月1号，10号，20号凌晨2点清理一次数据库，清理后需重新点击链接提交互助码。
 * 
-* 故选择：每月1，10，20号的早上9点发送提醒上车
-* 
-* ==========================Quantumultx=========================
+* ============Quantumultx===============
+*
 * [task_local]
-* #京东助力码上车
-* 0 0 9 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareCode.js, tag=京东助力码上车, enabled=true
-* 
+* # 京东助力码上车
+* # 每月1，10，20号的凌晨2点5分运行
+* 0 5 2 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareCode.js, tag=京东助力码上车, enabled=true
+*
 */
 const $ = new Env('京东助力码上车');
 //let allCode = "732c806d465d427aab0c948e2ef8de17@1a3547c6feb4423487d2f450adda3f35@f1d15dd3dfa745e293b2343e85f0e065&mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry@oikq73shoy33yjni64vntotbbm@4npkonnsy7xi3sny36skom3edho6thyj4hexnvy&MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==@MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==@MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE=";
-
-/*
-let farmArr = ['732c806d465d427aab0c948e2ef8de17','1a3547c6feb4423487d2f450adda3f35','f1d15dd3dfa745e293b2343e85f0e065'];
-let beanArr = ['mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry','oikq73shoy33yjni64vntotbbm','4npkonnsy7xi3sny36skom3edho6thyj4hexnvy'];
-let petArr = ['MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==','MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==','MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE='];
-*/
 
 let shareCodes = [
     '732c806d465d427aab0c948e2ef8de17@1a3547c6feb4423487d2f450adda3f35@f1d15dd3dfa745e293b2343e85f0e065',
