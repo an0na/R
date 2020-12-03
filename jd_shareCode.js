@@ -9,21 +9,20 @@
 * [task_local]
 * # 京东助力码上车
 * # 每月1，10，20号的凌晨2点5分运行
-* 0 5 2 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareCode.js, tag=京东助力码上车, enabled=true
+* 0 5 2 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_share_code.js, tag=京东助力码上车, enabled=true
 *
 */
 const $ = new Env('京东助力码上车');
-//let allCode = "732c806d465d427aab0c948e2ef8de17@1a3547c6feb4423487d2f450adda3f35@f1d15dd3dfa745e293b2343e85f0e065&mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry@oikq73shoy33yjni64vntotbbm@4npkonnsy7xi3sny36skom3edho6thyj4hexnvy&MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==@MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==@MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE=";
 
 let shareCodes = [
-    '732c806d465d427aab0c948e2ef8de17@1a3547c6feb4423487d2f450adda3f35@f1d15dd3dfa745e293b2343e85f0e065',
-    'mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry@oikq73shoy33yjni64vntotbbm@4npkonnsy7xi3sny36skom3edho6thyj4hexnvy',
-    'MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==@MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==@MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE='
+    '732c806d465d427aab0c948e2ef8de17@1a3547c6feb4423487d2f450adda3f35@f1d15dd3dfa745e293b2343e85f0e065',//水果 多账号自己的助力码使用@拼接
+    'mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry@oikq73shoy33yjni64vntotbbm@4npkonnsy7xi3sny36skom3edho6thyj4hexnvy',//种豆
+    'MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==@MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==@MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE='//萌宠
 ]
 
 !(async () => {
    for (let i = 0; i < shareCodes.length; i++) {
-        for (let j = 0; j < shareCodes.length; j++) {
+        for (let j = 0; j < shareCodes[i].split('@').length; j++) {
             var code = shareCodes[i].split('@')[j];
 
             var userName = getUserName(j);
@@ -79,17 +78,7 @@ function goCar(reqUrl) {
 }
 
 function getUserName(j) {
-    var userName = "";
-    if(j == 0){
-      userName = "自己";
-    }else if(j == 1){
-      userName = "姐姐";
-    }else if(j == 2){
-      userName = "妈妈";
-    }else{
-      userName = "未知";
-    }
-    return userName;
+    return "用户" + (j+1);
 }
 
 function getReqUrl(code, i) {
