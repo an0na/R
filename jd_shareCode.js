@@ -4,12 +4,11 @@
 * https://github.com/lxk0301/jd_scripts/tree/master
 * 每个月1号，10号，20号凌晨2点清理一次数据库，清理后需重新点击链接提交互助码。
 * 
-* 故选择：每月1，10，20号的早上9点发送提醒上车
-* 
 * ==========================Quantumultx=========================
 * [task_local]
-* #京东助力码上车
-* 0 0 9 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareCode.js, tag=京东助力码上车, enabled=true
+* # 京东助力码上车
+* # 每月1，10，20号的凌晨2点5分 自动上车
+* 0 5 2 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareCode.js, tag=京东助力码上车, enabled=true
 * 
 */
 const $ = new Env('京东助力码上车');
