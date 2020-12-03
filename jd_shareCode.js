@@ -38,11 +38,11 @@ let shareCodes = [
 
             console.log(`\n 账号：`+ userName + `,活动：`+ activityName + `,请求地址：`+ reqUrl);
 
-            goCar(reqUrl);
+            await goCar(reqUrl);
 
-            sleep(5000).then(() => {
+      /*      sleep(5000).then(() => {
                 console.log(`休息5s`);
-            });
+            });*/
 
             $.msg(`【账号` + userName +`】`+ activityName, `返回码：${$.code}, 返回信息：${$.message}`, ``, {"open-url": reqUrl });
 
