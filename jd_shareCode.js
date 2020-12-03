@@ -40,11 +40,15 @@ let shareCodes = [
 
             goCar(reqUrl);
 
+            sleep(5000).then(() => {
+                console.log(`休息5s`);
+            });
+
             $.msg(`【账号` + userName +`】`+ activityName, `返回码：${$.code}, 返回信息：${$.message}`, ``, {"open-url": reqUrl });
 
-            sleep(1000).then(() => {
+            sleep(500).then(() => {
                 console.log(`休息1s`);
-            })
+            });
         }
    }
 })().catch((e) => {
