@@ -1,11 +1,9 @@
 ![Mini’s github stats](https://github-readme-stats.vercel.app/api?username=an0na&show_icons=true&theme=merko)
 
-## 文件介绍
-
-### Ext
+## Ext
 网易云音乐灰色音乐解锁服务器(一共五个)
 
-### Filter
+## Filter
 QuantumultX 中使用到的一些分流：
 
 1. AdBlock.list
@@ -22,15 +20,13 @@ QuantumultX 中使用到的一些分流：
 12. Telegram.list
 13. YouTube.list
 
-### Rewrite
-QuantumultX 中使用到的一些复写：
+## Rewrite
+QuantumultX复写：Rewrite.conf //all in
 
-1. Rewrite.conf //公用的(从A-Z排序,包含了 hostname)
+## Script
+不再使用
 
-### Script
-QuantumultX 中使用到的一些脚本(因为现在都是远程调用，这个已经不再使用了)
-
-### Icon
+## Icon
 分流中使用到的图标
 
 ## 喜爱的GitHub仓库
