@@ -1,11 +1,6 @@
-![Mini’s github stats](https://github-readme-stats.vercel.app/api?username=an0na&show_icons=true&theme=merko)
+![an0na’s github stats](https://github-readme-stats.vercel.app/api?username=an0na&show_icons=true&theme=merko)
 
-## Ext
-网易云音乐灰色音乐解锁服务器(一共五个)
-
-## Filter
-QuantumultX 中使用到的一些分流：
-
+# 分流Filter
 1. AdBlock.list
 2. Apple.list
 3. CMedia.list
@@ -19,25 +14,18 @@ QuantumultX 中使用到的一些分流：
 11. Speedtest.list
 12. Telegram.list
 13. YouTube.list
+14. IOS_OTA.list
 
-## Rewrite
-QuantumultX复写：Rewrite.conf //all in
+# 分流Ext
+网易云音乐灰色音乐解锁服务器(一共五个)
 
-## Script
-不再使用
+# 复写Rewrite
+1. Rewrite.conf //all in
+2. Custom.conf //一些自定义的, 可以不适用
+3. QQRead.conf 
 
-## Icon
-分流中使用到的图标
-
-## 喜爱的GitHub仓库
-1. https://github.com/lxk0301/jd_scripts/tree/master
-2. https://github.com/elecV2/QuantumultX-Tools/tree/master/betterweb
-
-## 特别感谢(排名不分先后)：
-* [@NobyDa](https://github.com/NobyDa)
-
-* [@lxk0301](https://github.com/lxk0301)
-
-* [@chavyleung](https://github.com/chavyleung)
-
-* [@nzw9314](https://github.com/nzw9314)
+# 参考
+1. [Qure](https://github.com/Koolson/Qure)
+2. [sve1r](https://github.com/sve1r/Rules-For-Quantumult-X)
+3. [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script)
+4. [bigdargon](https://github.com/bigdargon/hostsVN)
