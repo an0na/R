@@ -19,11 +19,11 @@ $.cookieArr = [$.getdata('CookieJD') || '', $.getdata('CookieJD2') || ''];
         $.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1],
       );
       $.log(`\n开始【京东账号${i + 1}】${userName}`);
-			await $.wait(5000);
+			await $.wait(8000);
       await doShopTask();
-			await $.wait(5000);
+			await $.wait(8000);
       await doChannelTask();
-			await $.wait(5000);
+			await $.wait(8000);
       await doCartTask();
     }
   }
@@ -39,7 +39,7 @@ function doShopTask() {
         const { success } = JSON.parse(_data);
         $.log(`\n${success}\n${_data}`);
         if (success) {
-          await $.wait(6000);
+          await $.wait(8000);
           await doShopTask();
         }
       } catch (e) {
@@ -59,7 +59,7 @@ function doChannelTask() {
         const { success } = JSON.parse(_data);
         $.log(`\n${success}\n${_data}`);
         if (success) {
-          await $.wait(6000);
+          await $.wait(8000);
           await doChannelTask();
         }
       } catch (e) {
@@ -79,7 +79,7 @@ function doCartTask() {
         const { success } = JSON.parse(_data);
         $.log(`\n${success}\n${_data}`);
         if (success) {
-          await $.wait(6000);
+          await $.wait(8000);
           await doCartTask();
         }
       } catch (e) {
