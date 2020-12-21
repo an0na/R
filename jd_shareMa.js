@@ -13,13 +13,14 @@
 */
 const $ = new Env('京东助力码上车');
 
-// 依次是水果农场、种豆、萌宠、东东工厂、京喜工厂
+// 依次是水果农场、种豆、萌宠、东东工厂、京喜工厂、京东赚赚
 let shareCodes = [
     '732c806d465d427aab0c948e2ef8de17@1a3547c6feb4423487d2f450adda3f35@f1d15dd3dfa745e293b2343e85f0e065',
     'mlrdw3aw26j3xogldu3rljozwt7b7lkvtlkywry@oikq73shoy33yjni64vntotbbm@4npkonnsy7xi3sny36skom3edho6thyj4hexnvy',
     'MTAxODc2NTEzOTAwMDAwMDAyODExMjU5Nw==@MTAxODc2NTE0NzAwMDAwMDAzMDkxNjE0NQ==@MTE1NDQ5MzYwMDAwMDAwMzgyODU4MjE=',
     'P04z54XCjVWnYaS5m9cZ2X-1XgYxv6NlmvdOLc@P04z54XCjVWnYaS5uCHu7ZRWXhLlw@P04z54XCjVWnYaS5m9cZ2fw2XQcx1lt6MuNaBc',
-    'lqOBaIFQnaNP1Lap6uj6lQ==@QCiqrXOSPRtGWQ-mTAyQsQ=='
+    'lqOBaIFQnaNP1Lap6uj6lQ==@QCiqrXOSPRtGWQ-mTAyQsQ==',
+    'AUWE5mquYyWdbCjX7jy9CwQ@A3rrlSQQUyTQK@AUWE5mKWUxWNaWWX81X1OnA'
 ];
 
 !(async () => {
@@ -106,6 +107,9 @@ function getReqUrl(code, i) {
     }else if(i == 4){
      var url = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助码/";
      reqUrl = url.replace("互助码", code);
+    }else if(i == 5){
+     var url = "https://code.chiang.fun/api/v1/jd/jdzz/create/互助码/";
+     reqUrl = url.replace("互助码", code);
     }
     return reqUrl;
 }
@@ -122,6 +126,8 @@ function getActivityName(i) {
       activityName = "东东工厂-助力码上车";
     }else if(i == 4){
       activityName = "京喜工厂-助力码上车";
+    }else if(i == 5){
+      activityName = "京东赚赚-助力码上车";
     }
     return activityName;
 }
