@@ -11,6 +11,7 @@
 * 0 5 3 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareCode.js, tag=助力码自动上车, enabled=true
 * 
 */
+
 const $ = new Env('助力码自动上车');
 
 // 依次是水果农场、种豆、萌宠、东东工厂、京喜工厂、京东赚赚、疯狂JOY
@@ -37,7 +38,7 @@ let shareCodes = [
 
             await goCar(reqUrl);
 
-            $.msg(`【账号` + userName +`】`+ activityName, `response：${$.code}  ${$.message}`, ``, {"open-url": reqUrl });
+            $.msg(`【账号` + userName +`】`+ activityName, `resp：${$.code}, ${$.message}`, ``, {"open-url": reqUrl });
 
             sleep(1500).then(() => {
                 console.log(`休息1.5秒`);
