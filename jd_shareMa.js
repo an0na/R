@@ -8,7 +8,7 @@
 * [task_local]
 * # 京东助力码上车
 * # 每月1，10，20号的凌晨3点5分 自动上车
-* 0 5 3 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareCode.js, tag=助力码自动上车, enabled=true
+* 0 5 3 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareMa.js, tag=助力码自动上车, enabled=true
 * 
 */
 
@@ -38,7 +38,7 @@ let shareCodes = [
 
             await goCar(reqUrl);
 
-            $.msg(`【账号` + userName +`】`+ activityName, `resp：${$.code}, ${$.message}`, ``, {"open-url": reqUrl });
+            $.msg(`【账号` + userName +`】-`+ activityName, `resp：${$.code}, ${$.message}`, ``, {"open-url": reqUrl });
 
             sleep(1500).then(() => {
                 console.log(`休息1.5秒`);
@@ -54,29 +54,23 @@ let shareCodes = [
 
 //上车URL
 function getReqUrl(code, i) {
-    var reqUrl = "";
+    var url = "";
     if(i == 0){
-      var url = "http://api.turinglabs.net/api/v1/jd/farm/create/互助码/";
-      reqUrl = url.replace("互助码", code);
+      url = "http://api.turinglabs.net/api/v1/jd/farm/create/互助码/";
     }else if(i == 1){
-      var url = "http://api.turinglabs.net/api/v1/jd/bean/create/互助码/";
-      reqUrl = url.replace("互助码", code);
+      url = "http://api.turinglabs.net/api/v1/jd/bean/create/互助码/";
     }else if(i == 2){
-      var url = "http://api.turinglabs.net/api/v1/jd/pet/create/互助码/";
-      reqUrl = url.replace("互助码", code);
+      url = "http://api.turinglabs.net/api/v1/jd/pet/create/互助码/";
     }else if(i == 3){
-     var url = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/互助码/";
-     reqUrl = url.replace("互助码", code);
+     url = "http://api.turinglabs.net/api/v1/jd/ddfactory/create/互助码/";
     }else if(i == 4){
-     var url = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助码/";
-     reqUrl = url.replace("互助码", code);
+     url = "http://api.turinglabs.net/api/v1/jd/jxfactory/create/互助码/";
     }else if(i == 5){
-     var url = "https://code.chiang.fun/api/v1/jd/jdzz/create/互助码/";
-     reqUrl = url.replace("互助码", code);
+     url = "https://code.chiang.fun/api/v1/jd/jdzz/create/互助码/";
     }else if(i == 6){
-     var url = "https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/互助码/";
-     reqUrl = url.replace("互助码", code);
+     url = "https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/互助码/";
     }
+    var reqUrl = url.replace("互助码", code);
     return reqUrl;
 }
 
@@ -84,19 +78,19 @@ function getReqUrl(code, i) {
 function getActivityName(i) {
     var activityName = "";
     if(i == 0){
-      activityName = "农场水果-助力码上车";
+      activityName = "农场水果";
     }else if(i == 1){
-      activityName = "种豆得豆-助力码上车";
+      activityName = "种豆得豆";
     }else if(i == 2){
-      activityName = "萌宠-助力码上车";
+      activityName = "萌宠";
     }else if(i == 3){
-      activityName = "东东工厂-助力码上车";
+      activityName = "东东工厂";
     }else if(i == 4){
-      activityName = "京喜工厂-助力码上车";
+      activityName = "京喜工厂";
     }else if(i == 5){
-      activityName = "京东赚赚-助力码上车";
+      activityName = "京东赚赚";
     }else if(i == 6){
-      activityName = "疯狂JOY-助力码上车";
+      activityName = "疯狂JOY";
     }
     return activityName;
 }
