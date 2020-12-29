@@ -20,9 +20,7 @@
 网易云音乐灰色音乐解锁服务器(一共五个)
 
 # 复写Rewrite
-1. Rewrite.conf //all in
-2. Custom.conf //一些自定义的, 可以不适用
-3. QQRead.conf 
+1. Rewrite.conf 
 
 # 参考
 1. [Qure](https://github.com/Koolson/Qure)
