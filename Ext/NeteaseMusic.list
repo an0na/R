@@ -1,4 +1,6 @@
 # QX https://github.com/Mazetsz/ACL4SSR/blob/master/Clash/Netini.list
+# http://allobaby.cn/quantumultX/music.list
+
 http=music.griouges.cn:39000, tag=𝐌𝐮𝐬𝐢𝐜_One
 http=taron.top:100, tag=𝐌𝐮𝐬𝐢𝐜_Two
 http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Three
