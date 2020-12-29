@@ -29,15 +29,6 @@
 4. [bigdargon](https://github.com/bigdargon/hostsVN)
 
 # 笔记
-`` 
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.qxrewrite, tag=Bilibili, update-interval=86400, opt-parser=false, enabled=true
-
-^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi url script-response-body https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js 
-
-hostname = weixin110.qq.com
-
-
- ``
 
 
 
