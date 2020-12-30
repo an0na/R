@@ -16,19 +16,15 @@
 13. YouTube.list
 14. IOS_OTA.list
 
-# 分流Ext
-网易云音乐灰色音乐解锁服务器(一共五个)
-
 # 复写Rewrite
 1. Rewrite.conf 
+2. Bilibili.conf
+3. Price.conf
 
 # 参考
 1. [Qure](https://github.com/Koolson/Qure)
 2. [sve1r](https://github.com/sve1r/Rules-For-Quantumult-X)
 3. [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script)
 4. [bigdargon](https://github.com/bigdargon/hostsVN)
-
-# 笔记
-
-
-
+5. [Orz-3](https://github.com/Orz-3/task)
+6. [58xinian](https://github.com/58xinian/icon)
