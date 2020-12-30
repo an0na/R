@@ -1,14 +1,15 @@
 # QX https://github.com/Mazetsz/ACL4SSR/blob/master/Clash/Netini.list
 # http://allobaby.cn/quantumultX/music.list
 
-http=music.griouges.cn:39000, tag=𝐌𝐮𝐬𝐢𝐜_One
-http=taron.top:100, tag=𝐌𝐮𝐬𝐢𝐜_Two
+http=music.griouges.cn:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_One
+http=taron.top:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Two
 http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Three
 shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Four
 shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Five
 http=taron.top:200, over-tls=false, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Six
-http=3music.poetyin.me:100,tag=𝐌𝐮𝐬𝐢𝐜_Seven
-http=block4music.poetyin.me:39000,tag=𝐌𝐮𝐬𝐢𝐜_Eight
+http=3music.poetyin.me:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Seven
+http=block4music.poetyin.me:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Eight
 shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Nine
 shadowsocks=proxy.plusmedia.site:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Ten
 shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Eleven
+http=blockmusic2.poetyin.me:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Thirteen
