@@ -1,3 +1,5 @@
+//来源：https://github.com/chavyleung/scripts/blob/master/neteasemusic/quanx/neteasemusic.js
+
 const $ = new Env('网易云音乐')
 $.VAL_session = $.getdata('chavy_cookie_neteasemusic')
 $.CFG_retryCnt = ($.getdata('CFG_neteasemusic_retryCnt') || '10') * 1
@@ -9,7 +11,7 @@ $.CFG_retryInterval = ($.getdata('CFG_neteasemusic_retryInterval') || '500') * 1
   await signweb()
   await signapp()
   await getInfo()
-  await showmsg()
+  //await showmsg()
 })()
   .catch((e) => {
     $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
@@ -93,6 +95,8 @@ function showmsg() {
     if ($.isNewCookie && $.userInfo) {
       $.desc = `等级: ${$.userInfo.data.level}, 听歌: ${$.userInfo.data.nowPlayCount} => ${$.userInfo.data.nextPlayCount} 升级 (首)`
       $.desc = $.userInfo.data.level === 10 ? `等级: ${$.userInfo.data.level}, 你的等级已爆表!` : $.desc
+    } else {
+      $.desc = `[签到失败]请查看cookie!`
     }
     resove()
   })
