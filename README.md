@@ -1,25 +1,13 @@
 ![an0na’s github stats](https://github-readme-stats.vercel.app/api?username=an0na&show_icons=true&theme=merko)
 
-# 分流Filter
-1. AdBlock.list
-2. Apple.list
-3. CMedia.list
-4. GMedia.list
-5. Mainland.list
-6. Microsoft.list
-7. NeteaseMusic.list
-8. Netflix.list
-9. Outside.list
-10. PayPal.list
-11. Speedtest.list
-12. Telegram.list
-13. YouTube.list
-14. IOS_OTA.list
+# 使用指南
+1. 将config.conf文件下载下来，然后搜索关键词【baidu.com】，按照要求进行替换
+2. 就可以使用了
 
-# 复写Rewrite
-1. Rewrite.conf 
-2. Bilibili.conf
-3. Price.conf
+# 功能
+1、支持网易云灰色歌曲解锁
+2、其他正常的都有（不能满足的，请自行修改）
+3、有大的变动的时候，会及时更新
 
 # 参考
 1. [Qure](https://github.com/Koolson/Qure)
