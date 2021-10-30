@@ -7,7 +7,10 @@ const $ = new Env('双11红包');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let author = ['3MXlMUn','3CXSSSW']
 author = author[Math.floor((Math.random() * author.length))]
-const flCode = $.isNode() ? (process.env.FLCODE ? process.env.FLCODE : author):author;
+//const flCode = $.isNode() ? (process.env.FLCODE ? process.env.FLCODE : author):
+
+const flCode = 'mmm';
+
 let cookiesArr = [];
 if ($.isNode()) {
     Object.keys(jdCookieNode).forEach((item) => {
