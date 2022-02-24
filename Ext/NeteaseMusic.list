@@ -3,10 +3,7 @@
 # https://github.com/DesperadoJ/Rules-for-UnblockNeteaseMusic/blob/master/QuantumultX/UnblockNeteaseMusic.conf
 
 http=music.griouges.cn:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_One
-http=taron.top:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Two
-http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Three
-http=blockmusic2.poetyin.me:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Four
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Five
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Two
 
 
 
@@ -20,3 +17,7 @@ shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.
 ;shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Nine
 ;shadowsocks=proxy.plusmedia.site:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Six
 ;shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Seven
+
+;http=taron.top:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Two
+;http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Three
+;http=blockmusic2.poetyin.me:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Four
