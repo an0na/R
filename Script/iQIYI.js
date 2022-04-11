@@ -122,7 +122,7 @@ var $nobyda = nobyda();
         	}
         }
         const expires = $nobyda.expire ? $nobyda.expire.replace(/\u5230\u671f/, "") : "获取失败!"
-	if(expires != "获取失败!"){
+	if(!$nobyda.expire){
 	   if (!$nobyda.isNode) $nobyda.notify("爱奇艺", "到期时间: " + expires, pushMsg.join('\n'));
 	}
         if (barkKey) await BarkNotify($nobyda, barkKey, '爱奇艺', `到期时间: ${expires}\n${pushMsg.join('\n')}`, barkServer);
