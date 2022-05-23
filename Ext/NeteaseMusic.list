@@ -4,20 +4,14 @@
 
 http=music.griouges.cn:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_One
 shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Two
-
-
-
-
-
-;http=taron.top:200, over-tls=false, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Six
-;http=3music.poetyin.me:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Seven
-;http=block4music.poetyin.me:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Eight
-;shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Four
-;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Five
-;shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Nine
-;shadowsocks=proxy.plusmedia.site:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Six
-;shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Seven
-
-;http=taron.top:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Two
-;http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Three
-;http=blockmusic2.poetyin.me:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Four
+http=taron.top:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_01
+http=taron.top:200, over-tls=false, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_02
+http=3music.poetyin.me:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_03
+http=block4music.poetyin.me:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_04
+http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_05
+http=blockmusic2.poetyin.me:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_06
+shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_11
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_12
+shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_13
+shadowsocks=proxy.plusmedia.site:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_14
+shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_15
