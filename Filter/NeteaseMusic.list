@@ -1,7 +1,5 @@
 # 网易云音乐可选规则，排序需在 CMedia 上方
 
-# 网易云音乐可选规则，排序需在 CMedia 上方
-
 # Netease Music Advertising
 HOST,admusicpic.music.126.net,reject
 HOST,iadmat.nosdn.127.net,reject
