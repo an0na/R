@@ -291,7 +291,7 @@ HOST-KEYWORD,fenxi,AdBlock
 HOST-KEYWORD,googleads,AdBlock
 HOST-KEYWORD,guanggao,AdBlock
 HOST-KEYWORD,inmobi,AdBlock
-HOST-KEYWORD,lianmeng,AdBlock
+#HOST-KEYWORD,lianmeng,AdBlock
 HOST-KEYWORD,logger,AdBlock
 HOST-KEYWORD,mobaders,AdBlock
 HOST-KEYWORD,omgmta,AdBlock
