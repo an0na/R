@@ -49,7 +49,7 @@ USER-AGENT,MOO%E9%9F%B3%E4%B9%90*,CMedia
 # > QQMusic
 USER-AGENT,QQ%e9%9f%b3%e4%b9%90*,CMedia
 USER-AGENT,QQMusic*,CMedia
-HOST-SUFFIX,*music.qq.com,CMedia
+HOST-SUFFIX,music.qq.com,CMedia
 HOST-SUFFIX,y.qq.com,CMedia
 HOST,aqqmusic.tc.qq.com,CMedia
 
