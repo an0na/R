@@ -2,7 +2,7 @@
 # http://allobaby.cn/quantumultX/music.list
 # https://github.com/DesperadoJ/Rules-for-UnblockNeteaseMusic/blob/master/QuantumultX/UnblockNeteaseMusic.conf
 
-http=music.griouges.cn:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_One
+;http=music.griouges.cn:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_One
 ;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Two
 ;http=taron.top:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_01
 ;http=taron.top:200, over-tls=false, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_02
@@ -21,3 +21,20 @@ http=music.griouges.cn:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬
 ;http=music.griouges.cn:39000, tag=🎧𝐌𝐮𝐬𝐢𝐜12
 ;shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎧𝐌𝐮𝐬𝐢𝐜13
 ;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎧𝐌𝐮𝐬𝐢𝐜14
+
+# > NeteaseMusic Unlock List
+# > All Nodes
+# > 2022.07.16
+# Back music.desperadoj.com DNS 101.132.192.212
+http=music.lolico.me:39000, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_1
+shadowsocks=101.132.192.212:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_2
+shadowsocks=101.132.192.212:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_3
+http=101.132.79.113:23333, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_4
+http=music.griouges.cn:39000, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_5
+http=1.116.214.16:19980, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_6
+http=salvan.icu:19980, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_7
+http=os.tencentcdn.net:25000, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_8
+http=pc.tencentcdn.net:35000, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_9
+http=119.176.253.89:9080, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_10
+http=azgw.kevinxiao.cf:70, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_11
+http=azmb.kevinxiao.cf:70, over-tls=false, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_12
