@@ -23,15 +23,17 @@
 ;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_Two
 ;http=taron.top:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_01
 ;http=taron.top:200, over-tls=false, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_02
+;http=blockmusic2.poetyin.me:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_06
+
 ;http=3music.poetyin.me:100, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_03
 ;http=block4music.poetyin.me:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_04
 ;http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_05
-;http=blockmusic2.poetyin.me:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_06
-;shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_11
-;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_12
+;shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_11
+;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_12
 ;shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_13
 ;shadowsocks=proxy.plusmedia.site:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_14
 ;shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_15
+
 ;http=aimer.one:23333, fast-open=false, udp-relay=false,tag=🎧𝐌𝐮𝐬𝐢𝐜9
 ;http=101.132.79.113:23333, fast-open=false, udp-relay=false,tag=🎧𝐌𝐮𝐬𝐢𝐜10
 ;http=taron.top:100, tag=🎧𝐌𝐮𝐬𝐢𝐜11
@@ -39,10 +41,20 @@
 ;shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎧𝐌𝐮𝐬𝐢𝐜13
 ;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎧𝐌𝐮𝐬𝐢𝐜14
 
-#线路来源于网络
 #更新时间：2022.5.23
 #资源频道：https://t.me/yqc_123
 #问题反馈：https://t.me/yqc_777
-http=119.176.253.89:9080, over-tls=false, fast-open=false, udp-relay=false,  server_check_url=http://interface3.music.163.com,tag=𝐌𝐮𝐬𝐢𝐜_1
-shadowsocks=101.132.192.212:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_2
-shadowsocks=101.132.192.212:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_3
+;http=119.176.253.89:9080, over-tls=false, fast-open=false, udp-relay=false,  server_check_url=http://interface3.music.163.com,tag=𝐌𝐮𝐬𝐢𝐜_1
+;shadowsocks=101.132.192.212:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_2
+;shadowsocks=101.132.192.212:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0, fast-open=false, udp-relay=false, server_check_url=http://interface3.music.163.com, tag=𝐌𝐮𝐬𝐢𝐜_3
+
+# https://raw.githubusercontent.com/Mazetsz/ACL4SSR/master/Clash/Netini.list(https://git.io/JfNq3)
+;🎧𝐌𝐮𝐬𝐢𝐜𝟏 = http,106.52.127.72,19951
+;🎧𝐌𝐮𝐬𝐢𝐜𝟐 = http,3music.poetyin.me,100
+;🎧𝐌𝐮𝐬𝐢𝐜𝟑 = http,block4music.poetyin.me,39000
+;🎧𝐌𝐮𝐬𝐢𝐜𝟒 = Shadowsocks,blockmusic.poetyin.me,30003,aes-128-gcm,"desperadoj.com_free_proxy_x80j"
+;🎧𝐌𝐮𝐬𝐢𝐜𝟓 = Shadowsocks,music.desperadoj.com,30001,aes-128-gcm,"desperadoj.com_free_proxy_emx2"
+;🎧𝐌𝐮𝐬𝐢𝐜𝟔 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,"desperadoj.com_free_proxy_emx2"
+;🎧𝐌𝐮𝐬𝐢𝐜𝟕 = Shadowsocks,proxy.plusmedia.site,58080,rc4-md5,"ieG9l1nte5eo7IBZas84jLi"
+;🎧𝐌𝐮𝐬𝐢𝐜𝟖 = Shadowsocks,proxy.plusmedia.site,58081,rc4-md5,"ieG9l1nte5eo7IBZas84jLi"
+
