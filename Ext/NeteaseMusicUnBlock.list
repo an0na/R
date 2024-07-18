@@ -1,9 +1,13 @@
 # > NeteaseMusic Unlock List
-http=3music.poetyin.me:100, tag=𝐌𝐮𝐬𝐢𝐜_01
-http=block4music.poetyin.me:39000, tag=𝐌𝐮𝐬𝐢𝐜_02
-http=106.52.127.72:19951, tag=𝐌𝐮𝐬𝐢𝐜_03
-shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password="desperadoj.com_free_proxy_emx2", fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_4
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_5
-shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_6
-shadowsocks=proxy.plusmedia.site:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_7
-shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_8
+
+# https://github.com/DesperadoJ/Rules-for-UnblockNeteaseMusic/tree/master/QuantumultX
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_1
+
+;http=3music.poetyin.me:100, tag=𝐌𝐮𝐬𝐢𝐜_1
+;http=block4music.poetyin.me:39000, tag=𝐌𝐮𝐬𝐢𝐜_2
+;http=106.52.127.72:19951, tag=𝐌𝐮𝐬𝐢𝐜_3
+;shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password="desperadoj.com_free_proxy_emx2", fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_4
+;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_5
+;shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_6
+;shadowsocks=proxy.plusmedia.site:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_7
+;shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_8
