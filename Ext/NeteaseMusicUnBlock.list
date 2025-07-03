@@ -1,26 +1,3 @@
 # > NeteaseMusic Unlock List
 
-# https://github.com/DesperadoJ/Rules-for-UnblockNeteaseMusic/tree/master/QuantumultX
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_1
-
-;http=3music.poetyin.me:100, tag=𝐌𝐮𝐬𝐢𝐜_1
-;http=block4music.poetyin.me:39000, tag=𝐌𝐮𝐬𝐢𝐜_2
-;http=106.52.127.72:19951, tag=𝐌𝐮𝐬𝐢𝐜_3
-;shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password="desperadoj.com_free_proxy_emx2", fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_4
-;shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_5
-;shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_x80j, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_6
-;shadowsocks=proxy.plusmedia.site:58080, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_7
-;shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=ieG9l1nte5eo7IBZas84jLi, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_8
-
-
-http=ivapp.cn/wyy.txt, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_1
-http=music.lolico.me:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_2
-http=LOLICO.ME:443, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_3
-http=SALVAN.ICU:19980, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_4
-http=1.116.214.16:19980, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_5
-http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_6
-http=101.132.79.113:23333, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_7
-http=MUSIC.LOLICO.ME:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_8
-http=MUSIC.GRIOUGES.CN:39000, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_9
-shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_10
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=𝐌𝐮𝐬𝐢𝐜_11
+http=10.30.104.226:8080, tag=网易云破解
